@@ -1,2 +1,0 @@
-Hello World!
-еще раз!
