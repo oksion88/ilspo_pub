@@ -28,11 +28,11 @@ chmod +x apps/inst.sh
 chmod +x apps/config.sh 
 sh apps/inst.sh || true
 sh apps/config.sh || true
+sudo systemctl enable slim NetworkManager xorg
 
 if [[ $(sudo pacman -Syu | grep 'делать больше нечего') ]]; then
         echo "Job Done!"
 fi
-
 
 if [[ $(sudo pacman -Syu | grep 'there is nothing to do') ]]; then
         echo "Job Done!"
