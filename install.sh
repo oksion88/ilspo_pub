@@ -1,6 +1,7 @@
 #!/bin/bash
+set +e
 
-pacman -Syyu -y --noconfirm &
+pacman -Syyu -y --noconfirm &&
 sleep 5 
 rm -f /etc/pacman.conf && 
 rm -f /etc/pacman.d/mirrorlist && 
