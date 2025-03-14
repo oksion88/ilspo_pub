@@ -5,10 +5,11 @@ echo "############### COPING CONFIG FILES #################"
 echo "#####################################################"
 echo " "
 # mkdir ~/.config/
-cp apps/conf/i3 ~/.config/i3 || true
-cp apps/conf/picom ~/.config/picom || true
-cp apps/conf/rofi ~/.config/rofi || true
-cp apps/conf/polybar ~/.config/polybar || true
+cp -r apps/conf/i3 ~/.config/i3 || true
+cp -r apps/conf/picom ~/.config/picom || true
+cp -r apps/conf/rofi ~/.config/rofi || true
+cp -r apps/conf/polybar ~/.config/polybar || true
+cp apps/conf/.xinitrc ~/.xinitrc || true
 echo " "
 echo "#####################################################"
 echo "################### COPING DONE! ####################"
