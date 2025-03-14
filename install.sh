@@ -18,7 +18,7 @@ echo "############# FILES FOR PACMAN UPDATED! #############"
 echo "#####################################################"
 echo " "
 sleep 3 || true
-pacman -Scc -y || true
+# pacman -Scc -y || true
 pacman -Syyu -y || true
 sleep 3 || true
 chmod +x apps/inst.sh 
