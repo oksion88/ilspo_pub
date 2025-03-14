@@ -32,3 +32,9 @@ sh apps/config.sh || true
 if [[ $(sudo pacman -Syu | grep 'делать больше нечего') ]]; then
         echo "Job Done!"
 fi
+
+
+if [[ $(sudo pacman -Syu | grep 'there is nothing to do') ]]; then
+        echo "Job Done!"
+fi
+sleep 1
