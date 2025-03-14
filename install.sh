@@ -8,9 +8,9 @@ sudo pacman -S pacman fakeroot -y --noconfirm || true
 sudo cp /etc/pacman.conf /etc/pacman.conf.bac || true
 sudo cp pacman/pacman.conf /etc/pacman.conf &&
 #cp pacman/pacman.conff /etc/pacman.conf && 
-sleep 3 || true
+sleep 1 || true
 sudo pacman -Syyu -y --noconfirm || true
-sleep 5 || true
+sleep 1 || true
 # rm -f /etc/pacman.conf && 
 sudo rm -f /etc/pacman.d/mirrorlist && 
 # cp pacman/pacman.conf /etc/pacman.conf && 
@@ -20,10 +20,10 @@ echo "#####################################################"
 echo "################## PACMAN UPDATED! ##################"
 echo "#####################################################"
 echo " "
-sleep 3 || true
+sleep 1 || true
 # pacman -Scc -y || true
 sudo pacman -Syyu -y || true
-sleep 3 || true
+sleep 1 || true
 chmod +x apps/inst.sh 
 chmod +x apps/config.sh 
 sh apps/inst.sh || true
