@@ -4,6 +4,7 @@ echo "#####################################################"
 echo "################ HELLO MY FRIEND! ###################"
 echo "#####################################################"
 echo " "
+echo "####### ДЛЯ РАБОТЫ НЕОБХОДИМО УСТАНОВИТЬ SUDO! ######"
 sudo pacman -S pacman fakeroot -y --noconfirm || true
 sudo cp /etc/pacman.conf /etc/pacman.conf.bac || true
 sudo cp pacman/pacman.conf /etc/pacman.conf &&
