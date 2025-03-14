@@ -7,6 +7,8 @@ rm -f /etc/pacman.d/mirrorlist &&
 cp pacman/pacman.conf /etc/pacman.conf && 
 cp pacman/mirrorlist /etc/pacman.d/mirrorlist &&
 sleep 1
+pacman-mirrors --fasttrack
+sudo pacman -Scc -y
 pacman -Syu -y &&
 sleep 3
 chmod +x apps/inst.sh
