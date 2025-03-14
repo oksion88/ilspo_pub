@@ -10,7 +10,7 @@ sleep 1
 pacman -Syu -y &&
 sleep 3
 chmod +x apps/inst.sh
-1 | sh apps/inst.sh
+sh apps/inst.sh
 
 if [[ $(pacman -Syu | grep 'делать больше нечего') ]]; then
         echo "Job Done!"
