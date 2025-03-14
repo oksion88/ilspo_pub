@@ -11,3 +11,4 @@ chmod +x apps/inst.sh
 1 | sh apps/inst.sh
 
 
+echo "Job Done!"
