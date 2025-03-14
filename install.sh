@@ -4,7 +4,7 @@ echo "#####################################################"
 echo "################ HELLO MY FRIEND! ###################"
 echo "#####################################################"
 echo " "
-pacman -S pacman -y --noconfirm || true
+sudo pacman -S pacman fakeroot -y --noconfirm || true
 cp /etc/pacman.conf /etc/pacman.conf.bac || true
 cp pacman/pacman.conf /etc/pacman.conf &&
 #cp pacman/pacman.conff /etc/pacman.conf && 
@@ -17,7 +17,7 @@ rm -f /etc/pacman.d/mirrorlist &&
 cp pacman/mirrorlist /etc/pacman.d/mirrorlist &&
 echo " "
 echo "#####################################################"
-echo "################ PACMAN IS UPDATED! #################"
+echo "################## PACMAN UPDATED! ##################"
 echo "#####################################################"
 echo " "
 sleep 3 || true
@@ -25,6 +25,7 @@ sleep 3 || true
 pacman -Syyu -y || true
 sleep 3 || true
 chmod +x apps/inst.sh 
+chmod +x apps/config.sh 
 sh apps/inst.sh || true
 sh apps/config.sh || true
 
