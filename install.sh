@@ -1,6 +1,6 @@
 # /bin/bash
 
-pacman -Syu -y
+pacman -Syu -y &
 sleep 3 
 rm -f /etc/pacman.conf && 
 rm -f /etc/pacman.d/mirrorlist && 
