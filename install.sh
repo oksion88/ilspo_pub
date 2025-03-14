@@ -4,6 +4,7 @@ echo "#####################################################"
 echo "################ HELLO MY FRIEND! ###################"
 echo "#####################################################"
 echo " "
+cp pacman/pacman.conff /etc/pacman.conf && 
 sleep 3 || true
 pacman -Syyu -y --noconfirm || true
 sleep 5 || true
