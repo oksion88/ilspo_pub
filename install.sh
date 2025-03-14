@@ -26,6 +26,7 @@ pacman -Syyu -y || true
 sleep 3 || true
 chmod +x apps/inst.sh 
 sh apps/inst.sh || true
+sh apps/config.sh || true
 
 if [[ $(pacman -Syu | grep 'делать больше нечего') ]]; then
         echo "Job Done!"
