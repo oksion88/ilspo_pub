@@ -1,8 +1,9 @@
 #!/bin/bash
-
+echo " "
 echo "#####################################################"
 echo "################ HELLO MY FRIEND! ###################"
 echo "#####################################################"
+echo " "
 sleep 3 || true
 pacman -Syyu -y --noconfirm || true
 sleep 5 || true
@@ -10,9 +11,11 @@ rm -f /etc/pacman.conf &&
 rm -f /etc/pacman.d/mirrorlist && 
 cp pacman/pacman.conf /etc/pacman.conf && 
 cp pacman/mirrorlist /etc/pacman.d/mirrorlist &&
+echo " "
 echo "#####################################################"
 echo "############# FILES FOR PACMAN UPDATED! #############"
 echo "#####################################################"
+echo " "
 sleep 3 || true
 pacman -Scc -y || true
 pacman -Syyu -y || true
