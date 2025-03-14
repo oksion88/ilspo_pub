@@ -30,7 +30,6 @@ chmod +x apps/inst.sh
 chmod +x apps/config.sh 
 sh apps/inst.sh || true
 sh apps/config.sh || true
-sudo systemctl enable slim NetworkManager bluetooth
 
 if [[ $(sudo pacman -Syu | grep 'делать больше нечего') ]]; then
         echo "Job Done!"
