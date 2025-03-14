@@ -5,7 +5,7 @@ echo "################ HELLO MY FRIEND! ###################"
 echo "#####################################################"
 echo " "
 echo "####### ДЛЯ РАБОТЫ НЕОБХОДИМО УСТАНОВИТЬ SUDO! ######"
-pacman-key --init && pacman-key --populate archlinux || true
+#pacman-key --init && pacman-key --populate archlinux || true
 sudo pacman -S pacman fakeroot -y --noconfirm || true
 sudo cp /etc/pacman.conf /etc/pacman.conf.bac || true
 sudo cp pacman/pacman.conf /etc/pacman.conf &&
